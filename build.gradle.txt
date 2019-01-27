@@ -3,8 +3,13 @@
 // user guide available at http://gradle.org/docs/4.8.1/userguide/tutorial_java_projects.html
 
 plugins {
-    id 'org.asciidoctor.convert' version '1.5.6'
+    //id 'org.asciidoctor.convert' version '1.5.6'
+	id 'java'
 }
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+version = '1.2.1'
 
 asciidoctor {
     backends 'html5'
